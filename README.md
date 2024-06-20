@@ -26,9 +26,7 @@
 </div>
 
 <div align="center">
-<br>
-<hr>
-<br>
+<h2></h2>
   <a href="https://www.instagram.com/eu.lustri/" target="_blank">
     <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram"/>
   </a>
