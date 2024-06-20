@@ -42,5 +42,5 @@
 
 <div align="center">
 <br>
-  <img src=".github/texto.svg" alt="imagem"/>
+  <img src="texto.svg" alt="imagem"/>
 </div>
