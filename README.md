@@ -44,6 +44,6 @@ Olá! Sou Henrique, um entusiasta da programação em busca constante de novas d
 </div>
 <br>
 <div align="center">
-  <img src=".github/texto.svg" alt="imagem"/>
+  <img src=".github/frase.svg" alt="imagem"/>
 </div>
 
