@@ -1,26 +1,62 @@
 <svg xmlns='http://www.w3.org/2000/svg'
     xmlns:xlink='http://www.w3.org/1999/xlink'
     viewBox='0 0 380 50'
-    width='380px' height='50px'
-    style='background-color: transparent;'>
+    style='background-color: #00000000;'
+    width='380px' height='50px'>
 
-    <!-- Define a animação para o texto -->
-    <defs>
-        <path id='path' d='m0,25 h380' />
-        <animate id='slide' attributeName='d' begin='0s' dur='15000ms' repeatCount='indefinite'
-            values='m0,25 h380 ; m380,25 h0 ; m380,25 h380 ; m0,25 h380' />
-    </defs>
-
-    <!-- Texto com animação -->
+    <path id='path0'>
+        <animate id='d0' attributeName='d' begin='0s;d3.end'
+            dur='5000ms' fill='remove'
+            values='m0,25 h0 ; m0,25 h380 ; m0,25 h380 ; m0,25 h0'
+            keyTimes='0;0.8;0.8;1' />
+    </path>
     <text font-family='"monospace", monospace' fill='#ffffff' font-size='20'
         dominant-baseline='middle'
         x='50%' text-anchor='middle'>
-        <textPath xlink:href='#path'>
-            <animate attributeName='textLength' from='0' to='380' dur='15000ms' repeatCount='indefinite'/>
-            <tspan> Nunca pare de aprender. </tspan>
-            <tspan> Você é capaz. </tspan>
-            <tspan> Acredite no seu potencial. </tspan>
-            <tspan> Supere-se a cada dia. </tspan>
+        <textPath xlink:href='#path0'>
+            Nunca pare de aprender.
+        </textPath>
+    </text>
+
+    <path id='path1'>
+        <animate id='d1' attributeName='d' begin='d0.end'
+            dur='5000ms' fill='remove'
+            values='m0,25 h0 ; m0,25 h380 ; m0,25 h380 ; m0,25 h0'
+            keyTimes='0;0.8;0.8;1' />
+    </path>
+    <text font-family='"monospace", monospace' fill='#ffffff' font-size='20'
+        dominant-baseline='middle'
+        x='50%' text-anchor='middle'>
+        <textPath xlink:href='#path1'>
+            Você é capaz.
+        </textPath>
+    </text>
+
+    <path id='path2'>
+        <animate id='d2' attributeName='d' begin='d1.end'
+            dur='5000ms' fill='remove'
+            values='m0,25 h0 ; m0,25 h380 ; m0,25 h380 ; m0,25 h0'
+            keyTimes='0;0.8;0.8;1' />
+    </path>
+    <text font-family='"monospace", monospace' fill='#ffffff' font-size='20'
+        dominant-baseline='middle'
+        x='50%' text-anchor='middle'>
+        <textPath xlink:href='#path2'>
+            Acredite no seu potencial.
+        </textPath>
+    </text>
+
+    <path id='path3'>
+        <animate id='d3' attributeName='d' begin='d2.end'
+            dur='5000ms' fill='remove'
+            values='m0,25 h0 ; m0,25 h380 ; m0,25 h380 ; m0,25 h0'
+            keyTimes='0;0.8;0.8;1' />
+    </path>
+    <text font-family='"monospace", monospace' fill='#ffffff' font-size='20'
+        dominant-baseline='middle'
+        x='50%' text-anchor='middle'>
+        <textPath xlink:href='#path3'>
+            Supere-se a cada dia.
         </textPath>
     </text>
 
