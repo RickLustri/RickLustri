@@ -1,0 +1,27 @@
+<svg xmlns='http://www.w3.org/2000/svg'
+    xmlns:xlink='http://www.w3.org/1999/xlink'
+    viewBox='0 0 380 50'
+    width='380px' height='50px'
+    style='background-color: transparent;'>
+
+    <!-- Define a animação para o texto -->
+    <defs>
+        <path id='path' d='m0,25 h380' />
+        <animate id='slide' attributeName='d' begin='0s' dur='15000ms' repeatCount='indefinite'
+            values='m0,25 h380 ; m380,25 h0 ; m380,25 h380 ; m0,25 h380' />
+    </defs>
+
+    <!-- Texto com animação -->
+    <text font-family='"monospace", monospace' fill='#ffffff' font-size='20'
+        dominant-baseline='middle'
+        x='50%' text-anchor='middle'>
+        <textPath xlink:href='#path'>
+            <animate attributeName='textLength' from='0' to='380' dur='15000ms' repeatCount='indefinite'/>
+            <tspan> Nunca pare de aprender. </tspan>
+            <tspan> Você é capaz. </tspan>
+            <tspan> Acredite no seu potencial. </tspan>
+            <tspan> Supere-se a cada dia. </tspan>
+        </textPath>
+    </text>
+
+</svg>
